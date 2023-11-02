@@ -31,10 +31,10 @@ func main() {
 
 	ctx := context.Background()
 	providers := []func() tfprotov5.ProviderServer{
-		launchdarkly.Provider().GRPCProvider,
+		launchdarkly_flag_eval.Provider().GRPCProvider,
 
 		providerserver.NewProtocol5(
-			launchdarkly.NewPluginProvider(version)(),
+			launchdarkly_flag_eval.NewPluginProvider(version)(),
 		),
 	}
 
