@@ -1,4 +1,4 @@
-module github.com/launchdarkly/terraform-provider-launchdarkly
+module github.com/angelolapus/terraform-provider-launchdarkly
 
 go 1.19
 
