@@ -113,6 +113,6 @@ func (p *provider) GetResources(_ context.Context) (map[string]tfsdk.ResourceTyp
 
 func (p *provider) GetDataSources(_ context.Context) (map[string]tfsdk.DataSourceType, diag.Diagnostics) {
 	return map[string]tfsdk.DataSourceType{
-		"ldflags_evaluation_boolean": dataSourceFlagEvaluationBooleanType{}
+		"ldflags_evaluation_boolean": dataSourceFlagEvaluationBooleanType{},
 	}, nil
 }
