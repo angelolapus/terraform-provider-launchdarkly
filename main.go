@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server"
 	"github.com/hashicorp/terraform-plugin-mux/tf5muxserver"
-	"github.com/launchdarkly/terraform-provider-launchdarkly/launchdarkly"
+	"github.com/angelolapus/terraform-provider-launchdarkly/launchdarkly"
 )
 
 // Run "go generate" to generate the docs
