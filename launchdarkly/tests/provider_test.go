@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-mux/tf5muxserver"
-	"github.com/launchdarkly/terraform-provider-launchdarkly/launchdarkly"
+	"github.com/angelolapus/terraform-provider-launchdarkly/launchdarkly"
 )
 
 const LAUNCHDARKLY_ACCESS_TOKEN = "LAUNCHDARKLY_ACCESS_TOKEN"
