@@ -1,11 +1,14 @@
 package main
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/angelolapus/terraform-provider-launchdarkly/launchdarkly"
+	"context"
+
+	"github.com/hashicorp/terraform-plugin-framework/providerserver"
+	launchdarkly_flag_eval "github.com/angelolapus/terraform-provider-launchdarkly-flag-evaluation/launchdarklytarget"
 )
 
 func main() {
-	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: launchdarkly.Provider})
+	providerserver.Serve(context.Background(), launchdarkly_flag_eval.New, providerserver.ServeOpts{
+		Address: "registry.terraform.io/angelolapus/launchdarkly",
+	})
 }
