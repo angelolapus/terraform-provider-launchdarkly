@@ -21,10 +21,10 @@ builds:
     ldflags:
       - "-s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X github.com/launchdarkly/terraform-provider-launchdarkly/launchdarkly.version={{.Version}}"
     goos:
-      - freebsd
+      # - freebsd
       - windows
-      - linux
-      - darwin
+      # - linux
+      # - darwin
     goarch:
       - amd64
       - "386"
