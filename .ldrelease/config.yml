@@ -6,7 +6,7 @@ repo:
 
 jobs:
   - docker:
-      image: golang:1.17-buster
+      image: golang:1.19-buster
       copyGitHistory: true
     template:
       name: go
