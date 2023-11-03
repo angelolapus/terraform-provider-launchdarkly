@@ -1,6 +1,5 @@
 module github.com/angelolapus/terraform-provider-launchdarkly
 
-<!-- go 1.17 error about version-->
 go 1.19
 
 require (
