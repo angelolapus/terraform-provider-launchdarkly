@@ -1,6 +1,6 @@
 module github.com/angelolapus/terraform-provider-launchdarkly
 
-go 1.17
+go 1.19
 
 require (
 	github.com/hashicorp/terraform-plugin-framework v0.8.0
